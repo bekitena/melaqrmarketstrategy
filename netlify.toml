@@ -1,0 +1,10 @@
+# Plain static site — no build step or static site generator required.
+[build]
+  command = "echo 'No build step: static site'"
+  publish = "splashPageChallenge"
+
+# Serve the dashboard at the site root.
+[[redirects]]
+  from = "/"
+  to = "/group.html"
+  status = 200
